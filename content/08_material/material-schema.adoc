@@ -251,8 +251,8 @@ Relative paths to one or multiple property lookup table files with wavelength-de
 
 
 
-=== reflectanceUris
-Relative paths to one or multiple property lookup table files with wavelength-dependent reflectance values.
+=== reflectionCoefficientUris
+Relative paths to one or multiple property lookup table files with wavelength-dependent reflection coefficient values.
 
 *Type:* `+array+` +
 *Required:* No

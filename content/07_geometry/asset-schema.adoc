@@ -200,10 +200,9 @@ Distance of the wheels center lines at zero steering. Unit: meter; Range: [0, in
 
 
 ====== positionX
-Longitudinal position of the axle with respect to the vehicles center of the bounding box projected to the ground. Unit: meter; Range: [0, inf[.
+Longitudinal position of the axle with respect to the vehicles center of the bounding box projected to the ground. Unit: meter.
 
 *Type:* `+number+` +
-*Minimum value:* `+0+` +
 *Required:* Yes
 
 
@@ -247,10 +246,9 @@ Distance of the wheels center lines at zero steering. Unit: meter; Range: [0, in
 
 
 ====== positionX
-Longitudinal position of the axle with respect to the vehicles center of the bounding box projected to the ground. Unit: meter; Range: [0, inf[.
+Longitudinal position of the axle with respect to the vehicles center of the bounding box projected to the ground. Unit: meter.
 
 *Type:* `+number+` +
-*Minimum value:* `+0+` +
 *Required:* Yes
 
 
