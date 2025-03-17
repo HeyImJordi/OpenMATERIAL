@@ -5,9 +5,8 @@ title: ASAM OpenMATERIAL 3D
 version: 
   v(?<v>+({0..99}).+({0..99}).+({0..99})): $<v>
   v(?<version>+({0..99}).+({0..99}).+({0..99}))-*: $<version>-rc
-  #v*.*.*-*: release-candidate
   deploy: 'current'
-#  (*): 'pull-request'
+  (*): 'pull-request'
 # CENTRAL DOCUMENT ONLY!!! First page of the component. Define only once per component!
 start_page: specification:index.adoc
 
