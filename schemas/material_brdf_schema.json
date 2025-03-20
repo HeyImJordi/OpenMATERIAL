@@ -126,7 +126,7 @@
                                     "number",
                                     "null"
                                 ],
-                                "description": "Exit azimuth angle in rad. It shall be within a range of \\(0\\) to \\(2 \\pi\\). The value is relative to the incident azimuth angle.",
+                                "description": "Exit azimuth angle in rad. It shall be within a range of \\(0\\) to \\(2 \\pi\\). The value is relative to the incident azimuth angle. The incident azimuth angle is set to 0° as the incident ray is used as reference.",
                                 "minimum": 0,
                                 "maximum": 6.283185
                             },
