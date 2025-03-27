@@ -15,7 +15,7 @@ Common formats for storing the geometry and visual materials of _3D models_ incl
 However, these formats do not provide a standardized way to structure the geometry or provide extensive metadata storage and exchange capabilities. 
 The {THIS_STANDARD} standard addresses these needs.
 
-This chapter includes all geometry-related definitions of {THIS_STANDARD}, marked in red in <<fig-openmaterial-geometry-overview>>.
+This section includes all geometry-related definitions of {THIS_STANDARD}, marked in red in <<fig-openmaterial-geometry-overview>>.
 
 The {THIS_STANDARD} asset file contains essential information relevant to the display and interactivity attributes of the _3D model_ in various computer applications.
 This includes metadata, _material_ mappings, and semantic information like coordinate system and pivot point descriptions.
