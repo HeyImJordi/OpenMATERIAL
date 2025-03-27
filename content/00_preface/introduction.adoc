@@ -28,24 +28,24 @@ Standardizing the representation of data and attributes, such as scenarios, road
 Standardization efforts have been made for scenarios and road data using ASAM OpenSCENARIO, ASAM OpenDRIVE, ASAM OpenCRG, and other standards. 
 {THIS_STANDARD} advances standardization by providing standardized definitions of _material properties_ and 3D geometry.
 
-=== The two main chapters of {THIS_STANDARD}
+=== The two main segments of {THIS_STANDARD}
 
-{THIS_STANDARD} is divided into distinct yet complementary chapters enabling a modular approach to implementation. Key to this is the distinction between material and geometry. Based on specific use cases, users of {THIS_STANDARD} can implement the standard for one or both chapters. At least one of the two chapters shall be implemented to conform with the standard.
+{THIS_STANDARD} is divided into distinct yet complementary segments enabling a modular approach to implementation. Key to this is the distinction between material and geometry. Based on specific use cases, users of {THIS_STANDARD} can implement the standard for one or both segments. At least one of the two segments shall be implemented to conform with the standard.
 
-* *Material*, see xref:08_material/introduction.adoc[Section 8, "Material"]: This chapter includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the material chapter. For example: “This tool supports {THIS_STANDARD}: Material”.
+* *Material*, see xref:08_material/introduction.adoc[Section 8, "Material"]: This segment includes definitions and file formats for storing and exchanging material properties. These properties can be physical, such as surface roughness, permittivity, and index of refraction, or measured data, like wavelength and angle-dependent reflectance values. Tools or systems focusing on material properties can implement support for the material segment. For example: “This tool supports {THIS_STANDARD}: Material”.
 
-* *Geometry*, see xref:07_geometry/introduction.adoc[Section 7, "Geometry"]: This chapter contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the geometry chapter. For example: “This tool supports {THIS_STANDARD}: Geometry”.
+* *Geometry*, see xref:07_geometry/introduction.adoc[Section 7, "Geometry"]: This segment contains structures for different object classes. These structures define uniform node structure, naming scheme and coordinate systems to enable exchange, common integration and animation of 3D models. Tools or systems working primarily with geometric data, such as 3D models or spatial structures, can implement support for the geometry segment. For example: “This tool supports {THIS_STANDARD}: Geometry”.
 
-For a full exchange of simulation-ready _3D assets_ however, both chapters must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
+For a full exchange of simulation-ready _3D assets_ however, both segments must be supported. Systems or tools providing full support for both material and geometric data can be described as follows: “This tool supports {THIS_STANDARD}”.
 
-A list of use cases examples can be found in xref:06_use_cases/use-cases.adoc[], each highlighting its relevance to the material chapter, the geometry chapter, or both.
+A list of use cases examples can be found in xref:06_use_cases/use-cases.adoc[], each highlighting its relevance to the material segment, the geometry segment, or both.
 
 === Structure and file formats
 
 {THIS_STANDARD} defines various file formats for specifying assets, _material properties_, and the mapping between them.
 <<fig-openmaterial-overview>> illustrates these file formats and their interconnections.
-The definitions of the geometry related data formats marked in red can be found in the geometry chapter.
-The definitions of the _material_ related data formats marked in blue can be found in the material chapter.
+The definitions of the geometry related data formats marked in red can be found in the geometry segment.
+The definitions of the _material_ related data formats marked in blue can be found in the material segment.
 
 [#fig-openmaterial-overview]
 .Overview of {THIS_STANDARD} file formats and data flow
@@ -121,7 +121,7 @@ Specifically, asset files are referenced from other ASAM OpenX standards to inte
 * ASAM OpenDRIVE standardizes the description of road networks, including geometric definitions of the road, but primarily focuses on the semantic description of the road. 
   The {THIS_STANDARD} geometry object class "Environment" enhances this by allowing the definition of a comprehensive _3D environment_ that aligns with an ASAM OpenDRIVE map.
 * ASAM OpenSCENARIO XML is a file format created to describe dynamic content in driving and traffic simulators, with a primary focus on complex maneuvers involving multiple entities like vehicles and pedestrians.
-  The {THIS_STANDARD} geometry chapter defines node structures and metadata for these object classes to seamlessly integrate ASAM OpenSCENARIO XML definitions with a _3D model_.
+  The {THIS_STANDARD} geometry segment defines node structures and metadata for these object classes to seamlessly integrate ASAM OpenSCENARIO XML definitions with a _3D model_.
   The asset file (.xoma) of a static _3D environment_ shall be linked in ASAM OpenSCENARIO XML using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/generated/content/RoadNetwork.html[SceneGraphFile property].
   Asset files (.xoma) of individual objects, such as vehicles, shall be linked using the https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/07_components_scenario/07_02_storyboard_entities.html[model3d property].
   Both environment and objects may either be given as an absolute path or as a path relative to the ASAM OpenSCENARIO XML file (.xosc).
