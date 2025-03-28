@@ -15,7 +15,7 @@ However, existing formats for materials in _3D models_ lack a standardized way t
 
 The {THIS_STANDARD} standard addresses this gap by providing a robust framework for defining materials in a way that is comprehensive, multi-spectral, and interchangeable.
 
-This chapter includes all _material_ definitions of {THIS_STANDARD}, marked in blue in <<fig-openmaterial-material-overview>>.
+This section includes all _material_ definitions of {THIS_STANDARD}, marked in blue in <<fig-openmaterial-material-overview>>.
 
 The first point of contact with a _material_ is the **Material Data File** (for example, `my-material.xomp`).
 This file contains metadata as well as basic _material properties_, such as roughness or density.
